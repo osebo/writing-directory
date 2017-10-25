@@ -3,7 +3,7 @@ title: Writings — Directory
 version:
 description: "Writing Directory"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "http://writings.osebo.net" # the base hostname & protocol for your site
 
 # Tachyons Version
 tv: "4.7.0"
