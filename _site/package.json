@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "An ongoing journal.",
   "main": "index.js",
-  "repository": "tinychime/jekyons",
+  "repository": "osebo/writing-directory",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Osebo Akhigbe",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.17.5",
