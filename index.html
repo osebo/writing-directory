@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<!-- Loop over _data/features.yml -->
+<!--<div class="ma4 ma5-ns">
+  {% for feature in site.data.features %}
+  <div class="w-33-l pr4 mb5 fl-l mt4 cf-4th p-fix">
+    <h2 class="normal f4 fw6">{{ feature.name }}</h2>
+    <p class="lh-copy f5 garamond">{{ feature.description }}</p>
+  </div>
+  {% endfor %}
+</div>-->
+
+<div class="ma4 ma5-ns">
+  {% for post in site.posts %}
+    <div class="w-33-l pr4 mb5 fl-l mt4 cf-4th p-fix">
+      <h2 class="normal f4 fw6"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+      <span class="post-meta f6">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <p class="lh-copy f5 garamond">{{ post.excerpt }}</p>
+    </div>
+  {% endfor %}
+</div>

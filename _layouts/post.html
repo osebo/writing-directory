@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<article itemscope itemtype="http://schema.org/BlogPosting" class="ma4 ma5-ns f3-ns">
+
+  <header>
+    <h3 itemprop="name headline">{{ page.title }}</h3>
+    <p class="f5"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+  </header>
+
+  <div itemprop="articleBody" class="lh-copy-ns garamond measure-wide">
+    {{ content }}
+  </div>
+
+  <div class="PageNavigation">
+    {% if page.next.url %}
+      <a class="next dib fl" href="{{ site.baseurl }}{{page.next.url}}"><p class="f6">next</p>{{next}}</a>
+    {% endif %}
+    {% if page.previous.url %}
+      <a class="prev dib fr" href="{{ site.baseurl }}{{page.previous.url}}">{{back}}<p class="f6">previous</p></a>
+    {% endif %}
+  </div>
+
+</article>

@@ -1,0 +1,72 @@
+---
+# Tachyons Styles
+---
+
+@import 'https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i';
+
+body {
+  background-color: #F7F7F7;
+  color: #000;
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica, Arial, sans-serif;
+  letter-spacing: 0;
+  /** cursor:url("https://i.imgur.com/dFCnebm.png"), auto; **/
+}
+
+.cf {
+  clear: both;
+}
+
+.mt1 {
+  margin: 1rem 0 1rem 0;
+}
+
+.f4 {
+  font-size: 1rem;
+}
+
+.f2.link {
+  color: black;
+  font-size: 1.6rem;
+}
+
+.mb5 {
+  margin-bottom: 6rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.cf-4th {
+  p {
+    color: #000;
+    font-family: athelas, georgia, serif;
+    line-height: 1.5;
+  }
+  &:nth-child(4n) {
+    margin-right: 0;
+    clear: both;
+  }
+}
+
+.p-fix {
+  &:nth-child(3n) {
+    padding-right: 0;
+    margin-right: 0;
+  }
+}
+
+.mt6-ns {
+  margin-top: 4rem;
+}
+
+/*** ARROW STYLES ***/
+
+a.prev {
+  font-size: 1.2rem;
+}
+
+.PageNavigation {
+  margin-top: 6rem;
+}
